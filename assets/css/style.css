@@ -1,0 +1,313 @@
+/* ============================================
+   JOY Messenger Floating Button - Frontend v2.5.0
+   ============================================ */
+
+.mfb-container,
+.mfb-container * {
+    box-sizing: border-box;
+}
+
+.mfb-container {
+    position: fixed !important;
+    z-index: 999999 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    width: max-content;
+    height: max-content;
+    line-height: 1;
+    isolation: isolate;
+}
+
+@media (min-width: 769px) {
+    .mfb-container {
+        bottom: var(--mfb-offset-bottom-desktop, 28px) !important;
+        right: var(--mfb-offset-right-desktop, 28px) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mfb-container {
+        bottom: var(--mfb-offset-bottom-mobile, 82px) !important;
+        right: var(--mfb-offset-right-mobile, 8px) !important;
+    }
+}
+
+.mfb-main-btn,
+.mfb-btn {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+    font: inherit !important;
+    text-decoration: none !important;
+    outline: none !important;
+    user-select: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mfb-main-btn {
+    width: var(--mfb-button-size-desktop, 58px) !important;
+    height: var(--mfb-button-size-desktop, 58px) !important;
+    min-width: var(--mfb-button-size-desktop, 58px) !important;
+    min-height: var(--mfb-button-size-desktop, 58px) !important;
+    border-radius: var(--mfb-button-radius, 999px) !important;
+    background: var(--mfb-primary-color, #003F6E) !important;
+    border: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    z-index: 3 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    color: var(--mfb-icon-color, #FFFFFF) !important;
+    box-shadow: 0 14px 38px rgba(0, 63, 110, 0.35), 0 4px 16px rgba(0, 0, 0, 0.22) !important;
+    transition: transform 0.24s ease, box-shadow 0.24s ease, background-color 0.24s ease !important;
+}
+
+@media (max-width: 768px) {
+    .mfb-main-btn {
+        width: var(--mfb-button-size-mobile, 58px) !important;
+        height: var(--mfb-button-size-mobile, 58px) !important;
+        min-width: var(--mfb-button-size-mobile, 58px) !important;
+        min-height: var(--mfb-button-size-mobile, 58px) !important;
+    }
+}
+
+.mfb-main-btn:hover {
+    transform: translateY(-2px) scale(1.04) !important;
+    box-shadow: 0 18px 48px rgba(0, 63, 110, 0.42), 0 6px 18px rgba(0, 0, 0, 0.28) !important;
+}
+
+.mfb-main-btn:focus-visible,
+.mfb-btn:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.72) !important;
+    outline-offset: 3px !important;
+}
+
+.mfb-icon,
+.mfb-main-custom-icon {
+    width: 48% !important;
+    height: 48% !important;
+    max-width: 48% !important;
+    max-height: 48% !important;
+    position: absolute !important;
+    inset: 0 !important;
+    margin: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+    fill: var(--mfb-icon-color, #FFFFFF) !important;
+    transition: opacity 0.25s ease, transform 0.25s ease !important;
+    pointer-events: none !important;
+}
+
+.mfb-icon-comment,
+.mfb-main-custom-icon {
+    opacity: 1 !important;
+    transform: rotate(0deg) scale(1) !important;
+}
+
+.mfb-icon-close {
+    opacity: 0 !important;
+    transform: rotate(-90deg) scale(0.62) !important;
+}
+
+.mfb-main-btn.active .mfb-icon-comment,
+.mfb-main-btn.active .mfb-main-custom-icon,
+.mfb-container.mfb-open .mfb-icon-comment,
+.mfb-container.mfb-open .mfb-main-custom-icon {
+    opacity: 0 !important;
+    transform: rotate(90deg) scale(0.62) !important;
+}
+
+.mfb-main-btn.active .mfb-icon-close,
+.mfb-container.mfb-open .mfb-icon-close {
+    opacity: 1 !important;
+    transform: rotate(0deg) scale(1) !important;
+}
+
+@media (min-width: 769px) {
+    .mfb-pulse {
+        position: absolute !important;
+        inset: 0 !important;
+        border-radius: inherit !important;
+        border: 1px solid var(--mfb-primary-color, #003F6E) !important;
+        animation: mfb-pulse 5s infinite !important;
+        opacity: 0 !important;
+        z-index: -1 !important;
+        pointer-events: none !important;
+    }
+
+    @keyframes mfb-pulse {
+        0% { transform: scale(1); opacity: 0.6; }
+        100% { transform: scale(1.9); opacity: 0; }
+    }
+
+    .mfb-main-btn.active .mfb-pulse,
+    .mfb-container.mfb-open .mfb-pulse {
+        animation-play-state: paused !important;
+        opacity: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mfb-pulse {
+        display: none !important;
+    }
+}
+
+.mfb-buttons-container {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: calc(var(--mfb-button-size-desktop, 58px) + 12px) !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(18px) scale(0.94) !important;
+    transition: opacity 0.28s ease, visibility 0.28s ease, transform 0.28s ease !important;
+}
+
+@media (max-width: 768px) {
+    .mfb-buttons-container {
+        bottom: calc(var(--mfb-button-size-mobile, 58px) + 10px) !important;
+    }
+}
+
+.mfb-buttons-container.active,
+.mfb-container.mfb-open .mfb-buttons-container {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+.mfb-btn {
+    width: var(--mfb-messenger-size-desktop, 58px) !important;
+    height: var(--mfb-messenger-size-desktop, 58px) !important;
+    min-width: var(--mfb-messenger-size-desktop, 58px) !important;
+    min-height: var(--mfb-messenger-size-desktop, 58px) !important;
+    border-radius: var(--mfb-messenger-button-radius, 999px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.38) !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(12px) scale(0.82) !important;
+    transition: opacity 0.28s ease, visibility 0.28s ease, transform 0.28s ease, box-shadow 0.24s ease, background-color 0.24s ease !important;
+    background: rgba(255, 255, 255, 0.84) !important;
+    -webkit-backdrop-filter: blur(14px) saturate(135%) !important;
+    backdrop-filter: blur(14px) saturate(135%) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.20), inset 0 1px 0 rgba(255, 255, 255, 0.58) !important;
+    overflow: hidden !important;
+}
+
+.mfb-call {
+    box-shadow: 0 10px 28px rgba(29, 218, 80, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+}
+
+@media (max-width: 768px) {
+    .mfb-btn {
+        width: var(--mfb-messenger-size-mobile, 52px) !important;
+        height: var(--mfb-messenger-size-mobile, 52px) !important;
+        min-width: var(--mfb-messenger-size-mobile, 52px) !important;
+        min-height: var(--mfb-messenger-size-mobile, 52px) !important;
+    }
+}
+
+.mfb-buttons-container.active .mfb-btn,
+.mfb-container.mfb-open .mfb-btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+.mfb-btn:nth-child(1) { transition-delay: 0.04s !important; }
+.mfb-btn:nth-child(2) { transition-delay: 0.08s !important; }
+.mfb-btn:nth-child(3) { transition-delay: 0.12s !important; }
+.mfb-btn:nth-child(4) { transition-delay: 0.16s !important; }
+
+.mfb-btn:hover {
+    transform: translateY(-3px) scale(1.06) !important;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+}
+
+.mfb-btn img {
+    width: var(--mfb-messenger-icon-scale, 82%) !important;
+    height: var(--mfb-messenger-icon-scale, 82%) !important;
+    max-width: var(--mfb-messenger-icon-scale, 82%) !important;
+    max-height: var(--mfb-messenger-icon-scale, 82%) !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    display: block !important;
+    object-fit: contain !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    filter: none !important;
+    transition: transform 0.24s ease, filter 0.24s ease !important;
+}
+
+.mfb-call img {
+    width: min(var(--mfb-messenger-icon-scale, 82%), 90%) !important;
+    height: min(var(--mfb-messenger-icon-scale, 82%), 90%) !important;
+    max-width: 90% !important;
+    max-height: 90% !important;
+}
+
+.mfb-btn:hover img {
+    transform: scale(1.05) !important;
+    filter: brightness(1.08) !important;
+}
+
+.mfb-tooltip {
+    position: absolute !important;
+    right: calc(100% + 12px) !important;
+    top: 50% !important;
+    transform: translateY(-50%) translateX(8px) !important;
+    background: rgba(15, 23, 42, 0.92) !important;
+    color: #ffffff !important;
+    padding: 8px 13px !important;
+    border-radius: 12px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
+    pointer-events: none !important;
+    z-index: 4 !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18) !important;
+}
+
+.mfb-tooltip:after {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 100% !important;
+    transform: translateY(-50%) !important;
+    border: 6px solid transparent !important;
+    border-left-color: rgba(15, 23, 42, 0.92) !important;
+}
+
+.mfb-main-btn:hover .mfb-tooltip {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(-50%) translateX(0) !important;
+}
+
+@media (max-width: 768px) {
+    .mfb-tooltip {
+        display: none !important;
+    }
+}

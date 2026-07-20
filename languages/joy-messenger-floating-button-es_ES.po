@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JOY Mess Floating Button 2.5.0\n"
+"POT-Creation-Date: 2026-06-17 00:00+0000\n"
+"PO-Revision-Date: 2026-06-17 00:00+0000\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Advanced"
+msgstr "Avanzado"
+
+msgid "Appearance"
+msgstr "Apariencia"
+
+msgid "Auto in footer"
+msgstr "Automático en el footer"
+
+msgid "Both"
+msgstr "Ambos"
+
+msgid "Bottom Offset (Desktop)"
+msgstr "Desplazamiento inferior (escritorio)"
+
+msgid "Bottom Offset (Mobile)"
+msgstr "Desplazamiento inferior (móvil)"
+
+msgid "Button Color"
+msgstr "Color del botón"
+
+msgid "Buttons Order"
+msgstr "Orden de botones"
+
+msgid "Buttons Order (top to bottom)"
+msgstr "Orden de botones (de arriba abajo)"
+
+msgid "Call"
+msgstr "Llamar"
+
+msgid "Call Button Color"
+msgstr "Color del botón de llamada"
+
+msgid "Call Icon"
+msgstr "Icono de llamada"
+
+msgid "Changes are shown here instantly before saving."
+msgstr "Los cambios se muestran aquí al instante antes de guardar."
+
+msgid "Clear"
+msgstr "Borrar"
+
+msgid "Default"
+msgstr "Predeterminado"
+
+msgid "Default Chat Icon Color"
+msgstr "Color del icono de chat predeterminado"
+
+msgid "Display Type"
+msgstr "Tipo de visualización"
+
+msgid "Enable display on phones and tablets"
+msgstr "Activar visualización en teléfonos y tablets"
+
+msgid "Enter a phone number. The button will open a tel: link. Leave empty to hide the call button."
+msgstr "Introduzca un número de teléfono. El botón abrirá un enlace tel:. Déjelo vacío para ocultar el botón de llamada."
+
+msgid "For WhatsApp use format: https://wa.me/79XXXXXXXXX. Leave link empty to hide this messenger."
+msgstr "Para WhatsApp use el formato: https://wa.me/79XXXXXXXXX. Deje el enlace vacío para ocultar este mensajero."
+
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+msgid "Icons"
+msgstr "Iconos"
+
+msgid "Joy Messenger Button"
+msgstr "Joy Messenger Button"
+
+msgid "Live Preview"
+msgstr "Vista previa en vivo"
+
+msgid "MAX Icon"
+msgstr "Icono de MAX"
+
+msgid "MAX Link"
+msgstr "Enlace de MAX"
+
+msgid "Main Button Border Radius"
+msgstr "Radio del botón principal"
+
+msgid "Main Button Size (Desktop)"
+msgstr "Tamaño del botón principal (escritorio)"
+
+msgid "Main Button Size (Mobile)"
+msgstr "Tamaño del botón principal (móvil)"
+
+msgid "Main Chat Icon"
+msgstr "Icono principal del chat"
+
+msgid "Messenger Button Border Radius"
+msgstr "Radio de botones de mensajería"
+
+msgid "Messenger Button Size (Desktop)"
+msgstr "Tamaño de botones de mensajería (escritorio)"
+
+msgid "Messenger Button Size (Mobile)"
+msgstr "Tamaño de botones de mensajería (móvil)"
+
+msgid "Messenger Icon Scale"
+msgstr "Escala de iconos de mensajería"
+
+msgid "Messenger Links"
+msgstr "Enlaces de mensajería"
+
+msgid "Open messengers"
+msgstr "Abrir mensajeros"
+
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+msgid "Right Offset (Desktop)"
+msgstr "Desplazamiento derecho (escritorio)"
+
+msgid "Right Offset (Mobile)"
+msgstr "Desplazamiento derecho (móvil)"
+
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+msgid "Select buttons. The visual order matches the order from top to bottom."
+msgstr "Seleccione los botones. El orden visual coincide de arriba abajo."
+
+msgid "Select messengers. The visual order matches the order from top to bottom."
+msgstr "Seleccione mensajeros. El orden visual coincide de arriba abajo."
+
+msgid "Select or upload an icon"
+msgstr "Seleccione o suba un icono"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "Shortcode only [messenger_button]"
+msgstr "Solo shortcode [messenger_button]"
+
+msgid "Show on Mobile Devices"
+msgstr "Mostrar en dispositivos móviles"
+
+msgid "Telegram Icon"
+msgstr "Icono de Telegram"
+
+msgid "Telegram Link"
+msgstr "Enlace de Telegram"
+
+msgid "Tooltip Text"
+msgstr "Texto de ayuda"
+
+msgid "Tooltip Text (English)"
+msgstr "Texto de ayuda (inglés)"
+
+msgid "Tooltip Text (Russian)"
+msgstr "Texto de ayuda (ruso)"
+
+msgid "Tooltip Text (Spanish)"
+msgstr "Texto de ayuda (español)"
+
+msgid "Upload / choose"
+msgstr "Subir / elegir"
+
+msgid "Upload an SVG, PNG or WebP icon from the WordPress media library. Leave empty to use the default icon."
+msgstr "Suba un icono SVG, PNG o WebP desde la biblioteca de medios de WordPress. Déjelo vacío para usar el icono predeterminado."
+
+msgid "Use this icon"
+msgstr "Usar este icono"
+
+msgid "WhatsApp Color"
+msgstr "Color de WhatsApp"
+
+msgid "WhatsApp Icon"
+msgstr "Icono de WhatsApp"
+
+msgid "WhatsApp Link"
+msgstr "Enlace de WhatsApp"

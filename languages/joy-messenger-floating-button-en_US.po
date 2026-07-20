@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JOY Mess Floating Button 2.5.0\n"
+"POT-Creation-Date: 2026-06-17 00:00+0000\n"
+"PO-Revision-Date: 2026-06-17 00:00+0000\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Advanced"
+msgstr "Advanced"
+
+msgid "Appearance"
+msgstr "Appearance"
+
+msgid "Auto in footer"
+msgstr "Auto in footer"
+
+msgid "Both"
+msgstr "Both"
+
+msgid "Bottom Offset (Desktop)"
+msgstr "Bottom Offset (Desktop)"
+
+msgid "Bottom Offset (Mobile)"
+msgstr "Bottom Offset (Mobile)"
+
+msgid "Button Color"
+msgstr "Button Color"
+
+msgid "Buttons Order"
+msgstr "Buttons Order"
+
+msgid "Buttons Order (top to bottom)"
+msgstr "Buttons Order (top to bottom)"
+
+msgid "Call"
+msgstr "Call"
+
+msgid "Call Button Color"
+msgstr "Call Button Color"
+
+msgid "Call Icon"
+msgstr "Call Icon"
+
+msgid "Changes are shown here instantly before saving."
+msgstr "Changes are shown here instantly before saving."
+
+msgid "Clear"
+msgstr "Clear"
+
+msgid "Default"
+msgstr "Default"
+
+msgid "Default Chat Icon Color"
+msgstr "Default Chat Icon Color"
+
+msgid "Display Type"
+msgstr "Display Type"
+
+msgid "Enable display on phones and tablets"
+msgstr "Enable display on phones and tablets"
+
+msgid "Enter a phone number. The button will open a tel: link. Leave empty to hide the call button."
+msgstr "Enter a phone number. The button will open a tel: link. Leave empty to hide the call button."
+
+msgid "For WhatsApp use format: https://wa.me/79XXXXXXXXX. Leave link empty to hide this messenger."
+msgstr "For WhatsApp use format: https://wa.me/79XXXXXXXXX. Leave link empty to hide this messenger."
+
+msgid "General Settings"
+msgstr "General Settings"
+
+msgid "Icons"
+msgstr "Icons"
+
+msgid "Joy Messenger Button"
+msgstr "Joy Messenger Button"
+
+msgid "Live Preview"
+msgstr "Live Preview"
+
+msgid "MAX Icon"
+msgstr "MAX Icon"
+
+msgid "MAX Link"
+msgstr "MAX Link"
+
+msgid "Main Button Border Radius"
+msgstr "Main Button Border Radius"
+
+msgid "Main Button Size (Desktop)"
+msgstr "Main Button Size (Desktop)"
+
+msgid "Main Button Size (Mobile)"
+msgstr "Main Button Size (Mobile)"
+
+msgid "Main Chat Icon"
+msgstr "Main Chat Icon"
+
+msgid "Messenger Button Border Radius"
+msgstr "Messenger Button Border Radius"
+
+msgid "Messenger Button Size (Desktop)"
+msgstr "Messenger Button Size (Desktop)"
+
+msgid "Messenger Button Size (Mobile)"
+msgstr "Messenger Button Size (Mobile)"
+
+msgid "Messenger Icon Scale"
+msgstr "Messenger Icon Scale"
+
+msgid "Messenger Links"
+msgstr "Messenger Links"
+
+msgid "Open messengers"
+msgstr "Open messengers"
+
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgid "Right Offset (Desktop)"
+msgstr "Right Offset (Desktop)"
+
+msgid "Right Offset (Mobile)"
+msgstr "Right Offset (Mobile)"
+
+msgid "Save Changes"
+msgstr "Save Changes"
+
+msgid "Select buttons. The visual order matches the order from top to bottom."
+msgstr "Select buttons. The visual order matches the order from top to bottom."
+
+msgid "Select messengers. The visual order matches the order from top to bottom."
+msgstr "Select messengers. The visual order matches the order from top to bottom."
+
+msgid "Select or upload an icon"
+msgstr "Select or upload an icon"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Shortcode only [messenger_button]"
+msgstr "Shortcode only [messenger_button]"
+
+msgid "Show on Mobile Devices"
+msgstr "Show on Mobile Devices"
+
+msgid "Telegram Icon"
+msgstr "Telegram Icon"
+
+msgid "Telegram Link"
+msgstr "Telegram Link"
+
+msgid "Tooltip Text"
+msgstr "Tooltip Text"
+
+msgid "Tooltip Text (English)"
+msgstr "Tooltip Text (English)"
+
+msgid "Tooltip Text (Russian)"
+msgstr "Tooltip Text (Russian)"
+
+msgid "Tooltip Text (Spanish)"
+msgstr "Tooltip Text (Spanish)"
+
+msgid "Upload / choose"
+msgstr "Upload / choose"
+
+msgid "Upload an SVG, PNG or WebP icon from the WordPress media library. Leave empty to use the default icon."
+msgstr "Upload an SVG, PNG or WebP icon from the WordPress media library. Leave empty to use the default icon."
+
+msgid "Use this icon"
+msgstr "Use this icon"
+
+msgid "WhatsApp Color"
+msgstr "WhatsApp Color"
+
+msgid "WhatsApp Icon"
+msgstr "WhatsApp Icon"
+
+msgid "WhatsApp Link"
+msgstr "WhatsApp Link"
